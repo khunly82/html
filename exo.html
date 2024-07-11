@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems);
+        });
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="exo.css">
+</head>
+<body>
+    <section id="inscription">
+        <h1>Inscription Cours Hiver</h1>
+        <h2>Vous souhaitez nous rejoindre c'est ici</h2>
+        <form>
+            <div class="form-row">
+                <div class="form-field input-field">
+                    <label for="nom">Nom</label>
+                    <input id="nom" type="text">
+                </div>
+                <div class="form-field input-field">
+                    <label for="prenom">Prénom</label>
+                    <input id="prenom" type="text">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-field input-field">
+                    <input id="dateNaiss" type="date">
+                    <label for="dateNaiss">Date de naissance</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-field input-field">
+                    <select id="niveau">
+                        <option>Débutant</option>
+                        <option>Intermédiaire</option>
+                        <option>Confirmé</option>
+                    </select>
+                    <label for="niveau">Niveau</label>
+                </div>
+                <div class="form-field input-field">
+                    <select id="formule">
+                        <option>Individuel</option>
+                        <option>2 Joueurs</option>
+                        <option>3 Joueurs</option>
+                        <option>4 Joueurs</option>
+                        <option>5 Joueurs</option>
+                    </select>
+                    <label for="formule">Formule</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-field input-field">
+                    <label for="tel">Téléphone</label>
+                    <input id="tel" type="tel">
+                </div>
+                <div class="form-field input-field">
+                    <select id="jours" multiple>
+                        <option>Lundi</option>
+                        <option>Mardi</option>
+                        <option>Mercredi</option>
+                    </select>
+                    <label for="jours">Jours souhaités</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-field input-field">
+                    <label for="adresse">Adresse</label>
+                    <input id="adresse" type="text">
+                </div>
+                <div class="form-field input-field">
+                    <label for="email">E-Mail</label>
+                    <input id="email" type="email">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-field input-field">
+                    <label for="message">Message</label>
+                    <textarea rows="5" class="materialize-textarea" id="message"></textarea>
+                </div>
+            </div>
+            <div class="form-row">
+                <button class="waves-effect waves-light btn">Envoyer</button>
+            </div>
+        </form>
+    </section>
+    <!-- <div style="box-sizing: border-box; padding: 50px; width: 100%; background-color: red; height: 50px;"></div> -->
+</body>
+</html>

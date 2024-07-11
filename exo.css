@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gainsboro;
+}
+
+#inscription {
+    width: 100%;
+    background-color: white;
+    padding: 30px;
+}
+
+#inscription > h1, #inscription > h2 {
+    text-align: center;
+}
+
+#inscription .form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#inscription .form-row:last-child {
+    text-align: right;
+    justify-content: flex-end;
+}
+
+@media screen and (min-width: 1200px) {
+    #inscription {
+        width: 1000px;
+        margin: auto;
+        padding: 60px 100px;
+    }
+
+    #inscription .form-row {
+        display: flex;
+        gap: 10px;
+    }
+}
