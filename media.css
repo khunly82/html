@@ -1,0 +1,21 @@
+/* style sur mobile */
+p {
+    color: red;
+    display: none;
+}
+
+
+/* style sur tablette */
+@media screen and (min-width: 992px) {
+    p {
+        color: green;
+        display: unset;
+    }
+}
+
+/* style sur ecran large */
+@media screen and (min-width: 1200px) {
+    p {
+        color: blue;
+    }
+}

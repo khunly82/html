@@ -1,0 +1,13 @@
+input:invalid:not(:placeholder-shown), 
+select:invalid:not(:placeholder-shown), 
+textarea:invalid:not(:placeholder-shown) {
+    border: 1px solid red;
+}
+
+input:not(:invalid) {
+    border: 2px solid green;
+}
+
+/* #test::after {
+    content: 'coucou';
+} */

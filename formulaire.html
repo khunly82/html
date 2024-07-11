@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formulaire.css">
+</head>
+<body>
+    <form>
+        <div>
+            <label for="inputNom">Nom</label>
+            <input 
+                id="inputNom"
+                name="nom"
+                type="text"
+                placeholder="Doe, Star, ..."
+                required
+                minlength="2"
+                maxlength="50"
+                pattern="[a-zA-Z]+">
+        </div>
+
+        <div>
+            <label for="inputPrenom">Prénom</label>
+            <input 
+                id="inputPrenom"
+                name="prenom"
+                type="text"
+                placeholder="John, Ringo, ..."
+                required>
+        </div>
+        <div>
+            <label for="inputEmail">Email</label>
+            <input 
+                id="inputEmail"
+                name="email"
+                type="email"
+                placeholder="john@doe.be"
+                required>
+        </div>
+        <input type="password">
+        <input type="color">
+        <input type="number">
+        <input type="date">
+        <input type="time">
+        <input type="url">
+        <input type="hidden" name="hidden_token" value="azertyuiop">
+        <input type="checkbox">
+        <input type="file">
+        <div>
+            <input name="titre" type="radio" value="Mr">Mr
+            <input name="titre" type="radio" value="Mme">Mme
+            <input name="titre" type="radio" value="Melle">Melle
+        </div>
+        <select name="pays" multiple>
+            <option value="be">Belgique</option>
+            <option value="fr">France</option>
+            <option value="it">Italie</option>
+            <option value="es">Espagne</option>
+            <option value="jp">Japon</option>
+        </select>
+        <textarea></textarea>
+        <div>
+            <button type="submit">Envoyer</button>
+        </div>
+    </form>
+
+    <div id="test"></div>
+</body>
+</html>
